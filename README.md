@@ -23,6 +23,7 @@ This project applies ARIMA (AutoRegressive Integrated Moving Average) modelling 
 The ARIMA(5,1,0) model was fitted on AAPL closing prices from January 2020 to January 2024. The 30-day forecast is plotted against historical prices, showing the model captures the general trend direction.
 ARIMA forecasts on non-stationary financial data tend to revert to a mean, a known limitation addressed in more advanced models like GARCH or LSTM
 
+
 ## How to Run
 1. Clone the repo
 2. Install dependencies:
@@ -30,3 +31,14 @@ ARIMA forecasts on non-stationary financial data tend to revert to a mean, a kno
    pip install yfinance pandas matplotlib statsmodels
 ```
 3. Open and run `stock_price_forecasting.ipynb`
+
+
+
+## Dashboard
+An interactive Streamlit dashboard allows users to select any stock ticker, 
+date range, and forecast horizon dynamically.
+
+Run with:
+```
+streamlit run app.py
+```
